@@ -1,0 +1,25 @@
+
+var ToolBar_Supported = ToolBar_Supported ;
+if (ToolBar_Supported != null && ToolBar_Supported == true)
+{
+	Frame_Supported = false;
+	setDefaultICPMenuColor("#003366", "white", "#6699CC");
+	setToolbarBGColor("white");
+	setICPBanner("/windows2000/images/bnrWin2000.gif","/windows2000/default.asp","Microsoft Windows 2000 Home") ;
+
+	//Home
+addICPMenu("HomeMenu", "Windows Home Pages", "","/windows/default.asp");
+addICPSubMenu("HomeMenu","Windows Home","/windows/default.asp");
+addICPSubMenu("HomeMenu","Windows Me","/windowsMe/default.asp");
+addICPSubMenu("HomeMenu","Windows 98","/windows98/default.asp");
+addICPSubMenu("HomeMenu","Windows NT Workstation 4.0","/ntworkstation/default.asp");
+addICPSubMenu("HomeMenu","Windows NT Server 4.0","/ntserver/default.asp");
+addICPSubMenu("HomeMenu","Windows 95","/windows95/default.asp");
+addICPSubMenu("HomeMenu","Windows 2000","/windows2000/default.asp");
+addICPSubMenu("HomeMenu","Embedded Operating Systems","/windows/embedded/default.asp");
+addICPSubMenu("HomeMenu","Windows Technologies","/windows/technologies/default.asp");
+	
+	setICPSubMenuWidth ("HomeMenu", "absolute", 180);	
+	
+}
+<!-- Protoweb PixelProxy/1.10.26 Sun 16 Nov 2025 01:03:37 PM CST, rendered in 518ms -->

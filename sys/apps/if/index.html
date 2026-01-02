@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="if.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="toolbars"> <!-- Toolbars -->
+    <div class="toolbar1">
+      <button style="width: 50px;">File</button>
+      <button style="width: 50px;">Edit</button>
+      <button style="width: 50px;">View</button>
+      <button style="width: 50px;">Tools</button>
+      <button style="width: 50px;">About</button>
+      <img style="float:right;" alt="Binbownz Internet iframe" src="logo.gif">
+    </div>
+    <div class="toolbar2">
+      <button style="width: 60px;" id="backBtn"><img src="../../images/icons/if/back.png">Back</button>
+      <button title="Refresh" id="refreshBtn"><img src="../../images/icons/if/refresh.png"></button>
+      <button title="Home" id="homeBtn"><img src="../../images/icons/if/home.png"></button>
+      <img src="../../sep.png">
+      <img src="../../images/icons/if/fp.png" title="Edit">
+      <button id="fakeredir" title="Fake.com"><img src="../../images/icons/if/fake.png"></button>
+      <button id="ms" title="Messanger"><img src="../../images/icons/if/ms.png"></button>
+    </div>
+    <div class="toolbar3">
+      <p>Address</p>
+      <input id="addressBar" type="text" name="address" size="55">
+    </div>
+  </div>
+
+
+ <iframe id="contentFrame" src="../../../ifhomepage.html" sandbox="allow-scripts allow-same-origin"></iframe>
+  <script src="buttons.js"></script>
+  <!-- broken (im not a good javascript programmer): 
+  <script src="curstates.js"></script>-->
+</body>
+</html>

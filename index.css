@@ -1,0 +1,77 @@
+body {
+color: black;
+font-size: 20px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+margin: 0;
+background-image: url('bg.png');
+background-size: cover;
+background-position: center;
+background-repeat: repeat-y;
+object-fit: contain;
+padding: 40px 20px;
+}
+
+button {
+font-size: 18px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+border-color: gray;
+border-width: 6px;
+background-color: black;
+color: white;
+padding: 10px 20px;
+cursor: pointer;
+}
+/* .logogradient {
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background: linear-gradient(100deg, #7900a1, #66c557, #0000a0, #800000);
+} */
+
+/* Desktop Icons */
+.desktopicon {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 2px;
+  width: fit-content;
+  color: white;
+}
+
+.desktopicon:hover, .desktopicon.selected {
+  user-select: none;
+  image-rendering: pixelated;
+  background-color: transparent;
+  color: white;
+}
+
+.desktopicon img {
+  image-rendering: pixelated;
+  width: 42px;
+  height: 42px;
+  pointer-events: none;
+  flex-shrink: 0;
+}
+
+.desktopicon p {
+  color: black;
+  image-rendering: pixelated;
+  font-size: 12px;
+  font-family: 'MS Sans Serif', Arial, sans-serif;
+  text-align: left;
+  word-wrap: break-word;
+  max-width: 60px;
+  padding: 2px 4px;
+  margin: 0;
+  background-color: transparent;
+  line-height: 1.3;
+}
+
+.desktopicon:hover p, .desktopicon.selected p {
+  background-color: #0a246a;
+  color: white;
+}
+/* Desktop Icons end */

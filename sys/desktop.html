@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Explorer</title>
+    <link href="index.css" rel="stylesheet" type="text/css"/>
+</head>
+<script src="desktop.js"></script>
+<body>
+<audio id="startup" src="media/Logon.wav" preload="auto"></audio><script>
+window.onload = function() {
+document.getElementById("startup").play(); 
+}
+</script>
+
+<div class="taskbar">
+  <button>
+  <img src="images/icons/smalllogo.png" style="margin-top: 2px;"
+ >Start</button>
+  <img src="images/icons/sound.png" style="float: right; width: 12px; margin-right: 10px; margin-top: 7px;">
+</div><hr style=" margin-top: -0px; margin-left: -7.8px; margin-right: -8px;">
+
+<div class="desktop">
+ <div class="desktopicon">
+  <img class="img" src="images/icons/doc.png">
+  <p class="label">My Documents</p>
+ </div>
+
+ <div class="desktopicon">
+  <img class="img" src="images/icons/pc.png">
+  <p class="label">My Computer</p>
+ </div>
+ <div class="desktopicon">
+  <img class="img" src="images/icons/rbin.png">
+  <p class="label">Recycle Bin</p>
+ </div>
+ <div class="desktopicon">
+  <img class="img" src="images/icons/if.png">
+  <p class="label">Internet Iframed</p>
+ </div>
+
+ <div class="desktopicon">
+  <img class="img" src="images/icons/networkthingy.png">
+  <p class="label">My Networks</p>
+ </div>
+ </div>
+
+<div id="internetwindow" class="window-container" style="display:none;">
+    <div class="window">
+        <div class="topwindow">
+            <img src="images/icons/if.png" height="15">
+            Internet Iframed
+            <!--<button onclick="window.windowManager.close('internetwindow')" class="windowbuttons"
+                title="Close" class="windowbuttons">x</button>-->
+            <button onclick="window.windowManager.minimize('internetwindow')" class="windowbuttons"
+                title="Minimize" class="windowbuttons">-</button>
+        </div>
+
+        <div class="windowinsides">
+            <iframe src="apps/if/index.html" style="width:100%; height:100%; border:0; display:block;"></iframe>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

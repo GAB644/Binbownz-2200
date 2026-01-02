@@ -1,0 +1,131 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  image-rendering: pixelated;
+  cursor: url("../../cursors/default.png"), pointer;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+button {
+  border-color: whitesmoke;
+  border-width: 2px;
+  background-color: #d4d0c8;
+  color: black;
+  image-rendering: pixelated;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+}
+input {
+  border: 2px solid #808080;
+  box-shadow: inset 1px 1px 0 #ffffff, inset -1px -1px 0 #404040;
+  background-color: #ffffff;
+  color: black;
+  font-size: 12px;
+  height: 18px;
+  padding: 1px 6px;
+  image-rendering: pixelated;
+  outline: none;
+  flex: 1;
+}
+iframe#contentFrame { 
+  background-color: white;
+  flex: 1 1 auto;
+  width: 100%;
+  height: auto;
+  border: 0;
+  display: block;
+  min-height: 0;
+}
+
+/* toolbars */
+.toolbars {
+  flex: 0 0 auto;
+}
+.toolbar1 .toolbar2, .toolbar3 {
+  margin: 0;
+}
+.toolbar1 {
+  image-rendering: pixelated;
+  background-color: #d4d0c8;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0px;
+  align-items: center;
+}
+.toolbar1 img {
+  margin-left: auto;
+}
+.toolbar2 {
+  background-color: #d4d0c8;
+  margin: 0;
+  padding: 2px 6px;
+  image-rendering: pixelated;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0px;
+  height: 28px;
+  box-sizing: border-box;
+}
+.toolbar2 button:hover, .toolbar1 button:hover {
+  background-color: #e0ded9;
+}
+
+.toolbar2 p { margin: 0; padding: 0 6px 0 4px; font-size: 10px; }
+.toolbar2 input { height: 16px; }
+
+.toolbar3 {
+  background-color: #d4d0c8;
+  font-size: 10px;
+  margin: 0;
+  padding: 2px 6px;
+  image-rendering: pixelated;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  height: 20px;
+  box-sizing: border-box;
+}
+
+/* toolbar2 button's hover images */
+#backBtn :hover {
+  content: url("../../images/icons/if/selected/back.png");
+}
+#refreshBtn :hover {
+  content: url("../../images/icons/if/selected/refresh.png");
+}
+#homeBtn :hover {
+  content: url("../../images/icons/if/selected/home.png");
+}
+#fakeredir :hover {
+  content: url("../../images/icons/if/selected/fake.png");
+}
+#ms :hover {
+  content: url("../../images/icons/if/selected/ms.png");
+}
+
+/* toolbars end*/
+
+/* (disabled)
+body.loading {
+  cursor: wait !important;
+}
+
+body.loading #contentFrame {
+  pointer-events: none;
+}
+
+#contentFrame {
+  cursor: auto;
+}
+*/

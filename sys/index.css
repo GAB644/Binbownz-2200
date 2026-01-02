@@ -1,0 +1,162 @@
+body {
+  background-color: #3a6ea5;
+  color: black;
+  padding: 0;
+  overflow: hidden;
+  image-rendering: pixelated;
+  user-select: none;
+  cursor: url("cursors/default.png"), pointer;
+}
+button {
+  border-color: whitesmoke;
+  border-width: 2px;
+  background-color: #d4d0c8;
+  color: black;
+  image-rendering: pixelated;
+  user-select: none;
+}
+.taskbar {
+  flex-wrap: nowrap;
+  font-size: 14px;
+  font-family: 'pixelarial', system-ui, 'fonts/Terminal.ttf';
+  background-color: #d4d0c8;
+  color: black;
+  box-sizing: border-box;
+  border: gray 2px solid;
+  border-color: whitesmoke;
+  margin-top: -7.9px;
+  margin-left: -7.8px;
+  margin-right: -8px;
+  image-rendering: pixelated;
+  user-select: none;
+}
+
+
+/* Window Styles */
+.window {
+  width: var(--width, 400px);
+}
+.topwindow {
+  user-select: none;
+  flex-wrap: nowrap;
+  background-image: linear-gradient(to right,#0a246a,#a5c9ef );
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', "Arial", sans-serif, system-ui;
+  border: 3px solid #ceced2;
+  border-bottom: none;
+  border-color: #ceced2;
+  color: white;
+  text-align: left;
+  margin-bottom: -0px;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.windowbuttons {
+  align-items: center;
+  justify-content: space-between;
+  float: right;
+  display: flex;
+  gap: 2px;
+  margin-right: 2px;
+  height: 17px;
+  text-align: center;
+}
+.windowinsides {
+  flex-wrap: nowrap;
+  background-color: #d4d0c8;
+  border: 3px solid #ceced2;
+  border-color: #ceced2;
+  color: black;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+/* Window Styles end */
+
+/* Desktop Icons */
+.desktopicon {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 2px;
+  width: fit-content;
+  color: white;
+  cursor: url("cursors/default.png"), default;
+}
+
+.desktopicon:hover, .desktopicon.selected {
+  user-select: none;
+  image-rendering: pixelated;
+  background-color: transparent;
+  color: white;
+}
+
+.desktopicon img {
+  image-rendering: pixelated;
+  width: 32px;
+  height: 32px;
+  pointer-events: none;
+  flex-shrink: 0;
+}
+
+.desktopicon p {
+  image-rendering: pixelated;
+  font-size: 12px;
+  font-family: 'MS Sans Serif', Arial, sans-serif;
+  text-align: left;
+  word-wrap: break-word;
+  max-width: 60px;
+  padding: 2px 4px;
+  margin: 0;
+  background-color: transparent;
+  line-height: 1.3;
+}
+
+.desktopicon:hover p, .desktopicon.selected p {
+  background-color: #0a246a;
+  color: white;
+}
+/* Desktop Icons end */
+
+
+/* Internet Window */
+#internetwindow {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 1000 !important;
+
+}
+#internetwindow[style*="display: none"] {
+    display: none !important;
+}
+#internetwindow .window {
+    width: 876px !important;
+    height: 461px !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+#internetwindow .topwindow {
+    height: 24px !important;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 2px;
+}
+#internetwindow .windowinsides {
+    flex: 1 1 auto !important;
+    height: calc(100% - 24px) !important;
+}
+#internetwindow iframe {
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+    border: none !important;
+}
+/* Internet Window end */
+

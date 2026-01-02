@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<center> 
+  <div class="window" style="--width: 420px;">
+   <p class="topwindow">Please Wait...</p>
+    <div class="windowinsides">
+    <img src="images/loginbanner.gif" title="Welcome to this garbage!">
+    <br>
+    <p id="status-text" style="text-align: left;">-- Please Wait...</p>
+   </div>
+  </div>
+</center>
+
+<script>
+  const statusText = document.getElementById('status-text');
+  
+  setTimeout(() => {
+    statusText.textContent = '-- Preparing Network stuff...';
+    setTimeout(() => {
+      statusText.textContent = '-- Finishing a few things..';
+      setTimeout(() => {
+        window.location.href = 'desktop.html';
+      }, 40);
+    }, 2000);
+  }, 6000);
+</script>
+</body>
+</html>
