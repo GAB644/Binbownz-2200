@@ -1,0 +1,18 @@
+#upBtn :hover {
+  content: url("../../images/icons/explorer/selected/up.png");
+}
+#searchBtn :hover {
+  content: url("../../images/icons/explorer/selected/search.png");
+}
+#foldBtn :hover {
+  content: url("../../images/icons/explorer/selected/folders.png");
+}
+#delBtn :hover {
+  content: url("../../images/icons/explorer/selected/delete.png");
+}
+#undoBtn :hover {
+  content: url("../../images/icons/explorer/selected/undo.png");
+}
+#viewBtn :hover {
+  content: url("../../images/icons/explorer/selected/view.png");
+}
